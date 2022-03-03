@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/AnuchitO/goessent/say"
+)
 
 func main() {
-	fmt.Println("hello, Gopher")
+	s := "Hello Gopher"
+
+	fmt.Println(s)
+
+	a, b := 1, "Hellllll"
+	fmt.Println(a, b)
+
+	h, a := say.Say(b)
+	fmt.Println(h, a)
 }
